@@ -210,7 +210,13 @@ h2 {
   }
 
   .modules {
+    list-style-position: inside;
     padding-left: 0;
+  }
+
+   .modules li {
+    text-indent: -1.2em;
+    padding-left: 1.2em;
   }
 
   .hero-photo {
