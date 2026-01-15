@@ -205,27 +205,34 @@ h2 {
     grid-template-columns: 1fr;
   }
 
+  .modules-grid {
+    gap: 24px;
+  }
+
+  .modules {
+    padding-left: 0;
+  }
+
+  .hero-photo {
+    margin: 0 auto;
+    display: block;
+  }
+
   .image-placeholder {
     height: 240px;
-  }
-
-  .hero-text {
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 425px) {
-  body {
-    text-align: center;
-  }
-
-  .container {
-    width: 92%;
     margin: 0 auto;
   }
 
   .hero-text {
+    max-width: 100%;
     text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    width: 92%;
+    margin: 0 auto;
   }
 
   .price-box {
@@ -238,11 +245,6 @@ h2 {
   .modules {
     text-align: left;
     margin: 0 auto;
-    max-width: 360px;
-  }
-
-  .image-placeholder {
-    margin: 0 auto;
+    max-width: 100%;
   }
 }
-
