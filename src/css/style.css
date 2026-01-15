@@ -141,6 +141,19 @@ h2 {
   margin-top: 24px;
 }
 
+.single-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 40px;
+  list-style-position: inside;
+  padding-left: 0;
+  color: var(--gray);
+}
+
+.single-list li {
+  margin-bottom: 12px;
+}
+
 .modules {
   padding-left: 20px;
   color: var(--gray);
@@ -197,6 +210,9 @@ h2 {
 
   h2 {
     font-size: 24px;
+  }
+  .single-list {
+    grid-template-columns: 1fr;
   }
 
   .hero-grid,
