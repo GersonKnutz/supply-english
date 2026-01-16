@@ -86,6 +86,11 @@ h2 {
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
+.hero-image {
+  margin-bottom: 8px;
+}
+
+
 .hero-photo {
   width: 100%;
   max-width: 500px;
@@ -97,8 +102,6 @@ h2 {
   max-width: 400px;
   border-radius: 20%px;
 }
-
-
 
 .cta-button:hover {
   opacity: 0.9;
@@ -221,6 +224,10 @@ h2 {
     grid-template-columns: 1fr;
   }
 
+  .section {
+    padding: 10px 0;
+  }
+
   .modules-grid {
     gap: 24px;
   }
@@ -255,6 +262,10 @@ h2 {
   .container {
     width: 92%;
     margin: 0 auto;
+  }
+
+  .section {
+    padding: 60px 0;
   }
 
   .price-box {
