@@ -1,15 +1,9 @@
-/* ===============================
-   RESET
-================================ */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ===============================
-   BASE
-================================ */
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--blue-dark);
@@ -23,9 +17,6 @@ body {
   margin: 0 auto;
 }
 
-/* ===============================
-   TYPOGRAPHY
-================================ */
 h1 {
   font-size: 42px;
   margin-bottom: 20px;
@@ -53,9 +44,6 @@ h2 {
   font-size: 17px;
 }
 
-/* ===============================
-   HERO
-================================ */
 .hero {
   padding: 80px 0;
 }
@@ -85,6 +73,7 @@ h2 {
   color: var(--blue-dark);
   text-decoration: none;
   font-weight: bold;
+  margin-top: 48px;
   border-radius: 8px;
   transition: all 0.2s ease;
 }
@@ -102,9 +91,6 @@ h2 {
   margin: 0 auto;
 }
 
-/* ===============================
-   SECTIONS
-================================ */
 .section {
   padding: 64px 0;
 }
@@ -127,10 +113,6 @@ h2 {
   font-weight: 800;
 }
 
-
-/* ===============================
-   LISTS & GRID
-================================ */
 .list {
   list-style: none;
 }
@@ -147,9 +129,6 @@ h2 {
   gap: 18px;
 }
 
-/* ===============================
-   MÓDULOS – CARDS (MELHORADOS)
-================================ */
 .modules-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -240,9 +219,6 @@ h2 {
   color: var(--gray);
 }
 
-/* ===============================
-   AUTHOR
-================================ */
 .author-grid {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
@@ -264,7 +240,6 @@ h2 {
   align-items: stretch;
 }
 
-
 .author-image img {
   width: 100%;
   height: 100%;
@@ -276,7 +251,6 @@ h2 {
   font-size: 35px;
 }
 
-
 .author-text span {
   color: var(--orange);
 }
@@ -284,9 +258,7 @@ h2 {
 .author-text .text {
   font-size: 22px;
 }
-/* ===============================
-   CTA FINAL
-================================ */
+
 .cta-final {
   padding: 88px 0;
   text-align: center;
@@ -298,9 +270,6 @@ h2 {
   font-size: 16px;
 }
 
-/* ===============================
-   FOOTER
-================================ */
 .footer {
   padding: 24px 0;
   text-align: center;
@@ -312,9 +281,6 @@ h2 {
   margin-top: 8px;
 }
 
-/* ===============================
-   MODAL
-================================ */
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -352,9 +318,6 @@ h2 {
   cursor: pointer;
 }
 
-/* ===============================
-   RESPONSIVE
-================================ */
 @media (max-width: 1024px) {
   .modules-grid {
     grid-template-columns: repeat(2, 1fr);
