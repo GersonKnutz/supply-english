@@ -38,6 +38,12 @@ h2 {
  color: var(--orange);
 }
 
+.support {
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--gray);
+}
+
 .text {
   max-width: 720px;
   color: var(--gray);
