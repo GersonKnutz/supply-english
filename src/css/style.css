@@ -265,6 +265,16 @@ h2 {
   font-size: 22px;
 }
 
+.price-guarantee {
+  margin-top: 20px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  text-align: center;
+  font-size: 0.95rem;
+  color: #e0e0e0;
+}
+
+
 .cta-final {
   padding: 88px 0;
   text-align: center;
