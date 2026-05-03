@@ -4,24 +4,46 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalContent = document.getElementById('modalContent');
   const closeModal = document.getElementById('closeModal');
 
-  buttons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const details = btn.nextElementSibling;
+  // Abrir modal
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const details = button.nextElementSibling;
 
+      // Garante que existe conteúdo
+      if (!details) return;
+
+      // Injeta conteúdo no modal
       modalContent.innerHTML = details.innerHTML;
-      modal.style.display = 'flex';
+
+      // Mostra modal com classe (melhor que display direto)
+      modal.classList.add('active');
+
+      // trava scroll do body
+      document.body.style.overflow = 'hidden';
     });
   });
 
-  closeModal.addEventListener('click', () => {
-    modal.style.display = 'none';
-  });
+  // Fechar botão X
+  closeModal.addEventListener('click', close);
 
+  // Fechar clicando fora
   modal.addEventListener('click', (e) => {
     if (e.target === modal) {
-      modal.style.display = 'none';
+      close();
     }
   });
+
+  // Fechar com ESC
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      close();
+    }
+  });
+
+  function close() {
+    modal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+  }
 });
 
 
