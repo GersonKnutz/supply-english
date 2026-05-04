@@ -1,9 +1,18 @@
 :root {
-  --blue-dark: #0B1C2D;
-  --blue-royal: #0F2A44;
-  --white: #FFFFFF;
-  --gray: #C7CCD1;
-  --orange: #F7931E;
-  --orange-dark: #D97706;
-  --black: #1a1a1a;
+  /* BASE */
+  --blue-dark: #020617;   /* 🔥 mais profundo (antes estava claro) */
+  --blue-royal: #0f172a;  /* usado em seções */
+
+  /* TEXTO */
+  --white: #ffffff;
+  --gray: #94a3b8;        /* 🔥 melhor leitura em fundo escuro */
+  --gray-light: #cbd5f5;  /* subtítulos */
+
+  /* DESTAQUE */
+  --orange: #f97316;      /* 🔥 mais vibrante (melhor conversão) */
+  --orange-light: #fb923c;
+  --orange-dark: #ea580c;
+
+  /* BASE EXTRA */
+  --black: #020617;
 }
