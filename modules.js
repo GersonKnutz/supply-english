@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const modal = document.getElementById('moduleModal');
   const modalContent = document.getElementById('modalContent');
   const closeModal = document.getElementById('closeModal');
-
+ const faqItems = document.querySelectorAll('.faq-item');
   // Abrir modal
   buttons.forEach(button => {
     button.addEventListener('click', () => {
@@ -44,6 +44,19 @@ document.addEventListener('DOMContentLoaded', () => {
     modal.classList.remove('active');
     document.body.style.overflow = 'auto';
   }
+
+  faqItems.forEach(item => {
+
+  const button = item.querySelector('.faq-question');
+
+  button.addEventListener('click', () => {
+
+    item.classList.toggle('active');
+
+  });
+
+});
+
 });
 
 
