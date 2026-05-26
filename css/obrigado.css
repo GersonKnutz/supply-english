@@ -1,207 +1,363 @@
 /* =========================================
-   THANK YOU PAGE
+   THANK YOU PAGE — Supply English
 ========================================= */
 
 body {
   font-family: 'Inter', sans-serif;
-
   background:
     radial-gradient(circle at top right, rgba(249,115,22,0.12), transparent 30%),
     #020617;
-
   color: #f8fafc;
-
   overflow-x: hidden;
 }
 
-/* CONTAINER */
+/* =========================================
+   CONTAINER
+========================================= */
 
 .container {
   width: 90%;
   max-width: 900px;
-
   margin: 0 auto;
 }
 
-/* SECTIONS */
+/* =========================================
+   SECTIONS
+========================================= */
 
 .section {
   padding: 100px 0;
-
   position: relative;
 }
 
-.section.dark {
-  background: linear-gradient(
-    180deg,
-    #0f172a,
-    #020617
-  );
+.section--dark {
+  background: linear-gradient(180deg, #0f172a, #020617);
 }
 
-/* TITLES */
+.section--dark::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: rgba(255,255,255,0.06);
+}
 
-h1,
-h2 {
-  font-family: 'Inter', sans-serif;
+/* =========================================
+   CONFIRMAÇÃO
+========================================= */
 
+.section--confirm {
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.confirm-badge {
+  display: inline-block;
+  background: rgba(34,197,94,0.12);
+  border: 1px solid rgba(34,197,94,0.3);
+  color: #4ade80;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 8px 20px;
+  border-radius: 100px;
+  margin-bottom: 32px;
+}
+
+.confirm-sub {
+  font-size: 20px;
+  color: #94a3b8;
+  margin-bottom: 48px;
+  line-height: 1.7;
+}
+
+.confirm-turma {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  background: rgba(249,115,22,0.08);
+  border: 1px solid rgba(249,115,22,0.2);
+  border-radius: 14px;
+  padding: 20px 36px;
+}
+
+.turma-label {
+  font-size: 16px;
+  font-weight: 700;
+  color: #f97316;
+  letter-spacing: 0.5px;
+}
+
+.turma-desc {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+/* =========================================
+   LABEL TAG
+========================================= */
+
+.label-tag {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
+  color: #f97316;
+  margin-bottom: 20px;
+}
 
+/* =========================================
+   TITLES
+========================================= */
+
+h1, h2 {
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
   letter-spacing: 1px;
-
   line-height: 1.1;
 }
 
 h1 {
-  font-size: 52px;
-
+  font-size: 64px;
   margin-bottom: 24px;
-
   color: #fff;
 }
 
 h2 {
   font-size: 36px;
-
   margin-bottom: 28px;
-
   color: #f8fafc;
 }
 
-/* TEXT */
+/* =========================================
+   TEXT
+========================================= */
 
 p {
   font-size: 18px;
-
   line-height: 1.8;
-
   color: #cbd5e1;
-
   margin-bottom: 18px;
 }
 
-/* LIST */
-
-ul {
-  list-style: none;
-
-  margin-top: 30px;
-}
-
-ul li {
-  font-size: 18px;
-
-  line-height: 1.8;
-
+p strong {
   color: #f8fafc;
+  font-weight: 600;
+}
 
+/* =========================================
+   LISTAS
+========================================= */
+
+.lista-problema,
+.lista-solucao {
+  list-style: none;
+  margin-top: 32px;
+  padding: 0;
+}
+
+.lista-problema li,
+.lista-solucao li {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #f8fafc;
   margin-bottom: 14px;
+  padding-left: 4px;
 }
 
-/* HERO CONFIRM */
+.lista-problema li {
+  color: #fca5a5;
+}
 
-.section:first-child {
-  min-height: 80vh;
+.lista-solucao li {
+  color: #bbf7d0;
+}
 
+/* =========================================
+   AUTORIDADE
+========================================= */
+
+.autoridade-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 40px 0;
+}
+
+.autoridade-item {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 14px;
+  padding: 28px 20px;
+}
 
+.autoridade-numero {
+  font-size: 36px;
+  font-weight: 700;
+  color: #f97316;
+  line-height: 1;
+}
+
+.autoridade-desc {
+  font-size: 14px;
+  color: #94a3b8;
+  line-height: 1.5;
+}
+
+/* =========================================
+   SOLUÇÃO
+========================================= */
+
+.solucao-sub {
+  font-size: 20px;
+  color: #94a3b8;
+  margin-bottom: 40px;
+}
+
+/* =========================================
+   OFERTA
+========================================= */
+
+.section--oferta {
   text-align: center;
-}
-
-.section:first-child h1 {
-  font-size: 64px;
-
-  margin-bottom: 20px;
-}
-
-.section:first-child p {
-  font-size: 22px;
-}
-
-/* DARK TRANSITION */
-
-.section.dark::before {
-  content: "";
-
-  position: absolute;
-
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 1px;
-
-  background: rgba(255,255,255,0.06);
-}
-
-/* OFERTA */
-
-.section.oferta {
-  text-align: center;
-
   padding-bottom: 140px;
 }
 
-.section.oferta h1 {
-  font-size: 58px;
-
-  margin: 20px 0;
+.oferta-contexto {
+  font-size: 18px;
+  color: #94a3b8;
+  max-width: 600px;
+  margin: 0 auto 48px;
 }
 
-/* BOTÃO */
+/* =========================================
+   PREÇO
+========================================= */
+
+.preco-box {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background: rgba(249,115,22,0.06);
+  border: 1px solid rgba(249,115,22,0.2);
+  border-radius: 20px;
+  padding: 36px 60px;
+  margin-bottom: 40px;
+}
+
+.preco-de {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.preco-label {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+.preco-riscado {
+  font-size: 22px;
+  color: #64748b;
+  text-decoration: line-through;
+}
+
+.preco-por {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.preco-valor {
+  font-size: 56px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
+.preco-obs {
+  font-size: 14px;
+  color: #64748b;
+  margin: 0;
+}
+
+/* =========================================
+   BOTÃO
+========================================= */
 
 .btn {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-
-  margin-top: 30px;
-
+  margin-top: 8px;
   padding: 20px 44px;
-
   border-radius: 14px;
-
-  background: linear-gradient(
-    135deg,
-    #f97316,
-    #fb923c
-  );
-
+  background: linear-gradient(135deg, #f97316, #fb923c);
   color: #020617;
-
   text-decoration: none;
-
   font-size: 17px;
   font-weight: 700;
-
   box-shadow: 0 15px 40px rgba(249,115,22,0.35);
-
   transition: 0.3s ease;
 }
 
 .btn:hover {
   transform: translateY(-4px);
-
   box-shadow: 0 25px 60px rgba(249,115,22,0.45);
 }
 
-/* GARANTIA */
+/* =========================================
+   GARANTIA
+========================================= */
 
 .garantia {
   margin-top: 20px;
-
   font-size: 14px;
-
-  color: #94a3b8;
+  color: #64748b;
 }
 
 /* =========================================
-   RESPONSIVO
+   NÃO OBRIGADO
 ========================================= */
 
-/* TABLET */
+.nao-obrigado {
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.nao-obrigado p {
+  font-size: 13px;
+  color: #475569;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s;
+  margin: 0;
+}
+
+.nao-obrigado p:hover {
+  color: #64748b;
+}
+
+/* =========================================
+   RESPONSIVO — TABLET
+========================================= */
 
 @media (max-width: 900px) {
 
@@ -218,25 +374,37 @@ ul li {
   }
 
   p,
-  ul li {
+  .lista-problema li,
+  .lista-solucao li {
     font-size: 17px;
   }
 
-  .section:first-child h1 {
+  .section--confirm h1 {
     font-size: 48px;
   }
 
-  .section:first-child p {
-    font-size: 20px;
+  .confirm-sub {
+    font-size: 18px;
   }
 
-  .section.oferta h1 {
+  .autoridade-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .preco-valor {
     font-size: 46px;
+  }
+
+  .preco-box {
+    padding: 28px 40px;
   }
 
 }
 
-/* MOBILE */
+/* =========================================
+   RESPONSIVO — MOBILE
+========================================= */
 
 @media (max-width: 768px) {
 
@@ -250,44 +418,74 @@ ul li {
 
   h2 {
     font-size: 26px;
-
     line-height: 1.2;
   }
 
   p,
-  ul li {
+  .lista-problema li,
+  .lista-solucao li {
     font-size: 16px;
-
     line-height: 1.7;
   }
 
-  .section:first-child {
+  .section--confirm {
     min-height: 70vh;
   }
 
-  .section:first-child h1 {
+  .section--confirm h1 {
     font-size: 38px;
   }
 
-  .section:first-child p {
-    font-size: 18px;
+  .confirm-sub {
+    font-size: 17px;
   }
 
-  .section.oferta h1 {
-    font-size: 38px;
+  .autoridade-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .autoridade-item {
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .autoridade-numero {
+    font-size: 28px;
+    min-width: 48px;
+  }
+
+  .preco-box {
+    padding: 28px 24px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .preco-valor {
+    font-size: 42px;
   }
 
   .btn {
     width: 100%;
-
     max-width: 340px;
-
     padding: 18px 24px;
+  }
+
+  .solucao-sub {
+    font-size: 17px;
+  }
+
+  .oferta-contexto {
+    font-size: 16px;
   }
 
 }
 
-/* MOBILE PEQUENO */
+/* =========================================
+   RESPONSIVO — MOBILE PEQUENO
+========================================= */
 
 @media (max-width: 480px) {
 
@@ -299,12 +497,16 @@ ul li {
     font-size: 22px;
   }
 
-  .section:first-child h1 {
+  .section--confirm h1 {
     font-size: 32px;
   }
 
-  .section.oferta h1 {
-    font-size: 32px;
+  .preco-valor {
+    font-size: 36px;
+  }
+
+  .preco-box {
+    padding: 24px 16px;
   }
 
 }

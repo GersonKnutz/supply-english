@@ -1387,3 +1387,449 @@ body {
   }
 
 }
+
+/* =========================================
+   ADIÇÕES AO MAIN.CSS — Supply English
+   Cole no final do seu main.css existente
+========================================= */
+
+/* LABEL TAG */
+.label-tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 16px;
+}
+
+/* HERO CTA SUB */
+.hero-cta-sub {
+  font-size: 13px;
+  color: var(--gray);
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+/* =========================================
+   SEÇÃO DOR
+========================================= */
+
+.section-pain {
+  background: linear-gradient(180deg, #0f172a, #020617);
+  position: relative;
+}
+
+.section-pain::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 1px;
+  background: rgba(255,255,255,0.06);
+}
+
+.pain-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.pain-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: rgba(239,68,68,0.05);
+  border: 1px solid rgba(239,68,68,0.15);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.pain-x {
+  font-size: 18px;
+  color: #f87171;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.pain-item p {
+  font-size: 15px;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* =========================================
+   TRANSFORMAÇÃO
+========================================= */
+
+.transform-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.transform-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: rgba(34,197,94,0.05);
+  border: 1px solid rgba(34,197,94,0.15);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.transform-check {
+  font-size: 18px;
+  color: #4ade80;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.transform-item p {
+  font-size: 15px;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* =========================================
+   DEPOIMENTOS
+========================================= */
+
+.section-depoimentos {
+  background: linear-gradient(180deg, #0f172a, #020617);
+  position: relative;
+}
+
+.section-depoimentos::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 1px;
+  background: rgba(255,255,255,0.06);
+}
+
+.depoimentos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.depoimento-box {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.depoimento-placeholder {
+  border-style: dashed;
+  border-color: rgba(255,255,255,0.1);
+  opacity: 0.6;
+}
+
+.depoimento-avatar {
+  font-size: 32px;
+  width: 52px;
+  height: 52px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.depoimento-texto {
+  font-size: 15px;
+  color: #94a3b8;
+  line-height: 1.7;
+  margin: 0;
+  flex: 1;
+}
+
+.depoimento-nome {
+  font-size: 13px;
+  font-weight: 600;
+  color: #64748b;
+  letter-spacing: 0.3px;
+}
+
+.depoimentos-obs {
+  text-align: center;
+  font-size: 14px;
+  color: #64748b;
+  margin-top: 32px;
+}
+
+/* =========================================
+   OFERTA — ANCORAGEM + GARANTIA
+========================================= */
+
+.offer-anchor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.anchor-de {
+  font-size: 16px;
+  color: #64748b;
+}
+
+.anchor-de s {
+  color: #64748b;
+}
+
+.anchor-por {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--orange);
+}
+
+.guarantee-strip {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(34,197,94,0.07);
+  border: 1px solid rgba(34,197,94,0.2);
+  border-radius: 14px;
+  padding: 20px 24px;
+  margin-top: 32px;
+  text-align: left;
+}
+
+.guarantee-icon {
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.guarantee-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.guarantee-text strong {
+  font-size: 15px;
+  color: #4ade80;
+  font-weight: 600;
+}
+
+.guarantee-text span {
+  font-size: 14px;
+  color: #94a3b8;
+  line-height: 1.5;
+}
+
+.offer-seguro {
+  font-size: 13px;
+  color: #475569;
+  margin-top: 20px;
+}
+
+/* =========================================
+   RESPONSIVO
+========================================= */
+
+@media (max-width: 768px) {
+
+  .pain-grid,
+  .transform-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .depoimentos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .guarantee-strip {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 16px;
+  }
+
+  .offer-anchor {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+}
+
+/* =========================================
+   HERO IMAGE GRID (foto dentro do grid)
+   — visível só no mobile, escondida no desktop
+========================================= */
+
+.hero-image-grid {
+  display: none; /* esconde no desktop — a foto absoluta já aparece */
+}
+
+/* =========================================
+   HERO PROOF — fix mobile
+========================================= */
+
+@media (max-width: 900px) {
+
+  /* mostra a foto do grid, esconde a absoluta */
+  .hero-image-grid {
+    display: flex;
+    justify-content: center;
+    order: -1; /* foto aparece ANTES do texto no mobile */
+  }
+
+  .hero-image-grid img {
+    width: 100%;
+    max-width: 320px;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.6));
+  }
+
+  .hero-image {
+    display: none; /* esconde a foto absoluta no mobile */
+  }
+
+  /* proof items: linha por linha, sem cortar */
+  .hero-proof {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 32px;
+    padding: 0 5%;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .proof-item {
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    white-space: normal;
+    font-size: 13px;
+    padding: 14px 16px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .proof-item {
+    font-size: 12px;
+    padding: 12px 14px;
+  }
+}
+
+/* =========================================
+   AUTHOR STATS
+========================================= */
+
+.author-stats {
+  display: flex;
+  gap: 20px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.author-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: rgba(249,115,22,0.06);
+  border: 1px solid rgba(249,115,22,0.15);
+  border-radius: 12px;
+  padding: 16px 20px;
+  flex: 1;
+  min-width: 120px;
+}
+
+.stat-numero {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--orange);
+  line-height: 1;
+}
+
+.stat-desc {
+  font-size: 13px;
+  color: #94a3b8;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .author-stats {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .author-stat {
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .stat-numero {
+    font-size: 24px;
+    min-width: 52px;
+  }
+}
+
+/* =========================
+   EMPRESAS (AUTHOR SECTION)
+========================= */
+.empresas-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #64748b;
+  margin-top: 28px;
+  margin-bottom: 12px;
+}
+
+.empresas-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.empresa-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #f8fafc;
+  white-space: nowrap;
+}
+
+.empresa-badge span {
+  font-size: 11px;
+  font-weight: 400;
+  color: #64748b;
+}
+
+@media (max-width: 768px) {
+  .empresas-grid {
+    justify-content: center;
+  }
+  .empresas-label {
+    text-align: center;
+  }
+}
