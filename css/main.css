@@ -381,6 +381,143 @@ body {
   filter: blur(80px);
 }
 
+/* ===============================
+   METHOD 3D
+================================ */
+
+.method-section{
+
+    padding:100px 0;
+
+    background:#020617;
+
+}
+
+.method-header{
+
+    max-width:760px;
+
+    margin:0 auto 70px;
+
+    text-align:center;
+
+}
+
+.method-label{
+
+    display:inline-block;
+
+    margin-bottom:18px;
+
+    color:#f97316;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+}
+
+.method-header h2{
+
+    font-size:38px;
+
+    line-height:1.5;
+
+    margin-bottom:24px;
+
+    color:#fff;
+
+    text-transform:uppercase;
+
+}
+
+.method-header p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#cbd5e1;
+
+}
+
+.method-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:28px;
+
+}
+
+.method-card{
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    transition:.35s;
+
+    backdrop-filter:blur(12px);
+
+}
+
+.method-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#f97316;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.35);
+
+}
+
+.method-letter{
+
+    display:inline-block;
+
+    margin-bottom:16px;
+
+    color:#f97316;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.method-card h3{
+
+    font-size:28px;
+
+    margin-bottom:18px;
+
+    color:#fff;
+
+}
+
+.method-card p{
+
+    color:#cbd5e1;
+
+    line-height:1.8;
+
+    font-size:16px;
+
+}
 /* =========================
    FADE INFERIOR
 ========================= */
@@ -1832,4 +1969,60 @@ body {
   .empresas-label {
     text-align: center;
   }
+}
+
+@media(max-width:900px){
+
+.method-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.method-header h2{
+
+    font-size:34px;
+
+}
+
+.method-header p{
+
+    font-size:17px;
+
+}
+
+.method-card{
+
+    padding:28px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.method-section{
+
+    padding:70px 0;
+
+}
+
+.method-header h2{
+
+    font-size:28px;
+
+}
+
+.method-header p{
+
+    font-size:16px;
+
+}
+
+.method-card h3{
+
+    font-size:24px;
+
+}
+
 }
